@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+  	left: 0;
+  	right: 0;
+  	border: 2rem;
+}
+
+.initials {
+	float:left;
+}
+
+nav, footer {
+	background-color: #808080;
+	min-height: 50px;
+}
+
+.project1, .aboutme {
+	background-color: #D3D3D3;
+}
+header, section {
+	min-height: 300px;
+	padding: 3rem;
+}
