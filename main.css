@@ -3,10 +3,11 @@
 }
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	font-family: 'Questrial', sans-serif;
+	background-color: #792782;
 }
 
 nav {
@@ -15,19 +16,44 @@ nav {
   	left: 0;
   	right: 0;
   	border: 2rem;
+
 }
 
-.initials {
+header {
+	color: black;
+	font-family: 'Old Standard TT', serif;
+	background-color: white;
+}
+
+h2 {
+	font-family: 'Old Standard TT', serif;
+	color: black;
+	background-color: #ddb545;
+}
+
+h3 {
+	font-family: 'Old Standard TT', serif;
+	color: black;
+}
+
+.mouseover {
 	float:left;
 }
 
 nav, footer {
-	background-color: #808080;
+	background-color: #4a0055;
 	min-height: 50px;
+	color: white;
 }
 
-.project1, .aboutme {
-	background-color: #D3D3D3;
+/*.headingbar {
+	background-color: #ddb545;
+	margin:0;
+}*/
+
+.project1, .project2, .aboutme {
+	background-color: white;
+	padding: 0;
 }
 header, section {
 	min-height: 300px;

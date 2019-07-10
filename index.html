@@ -4,39 +4,45 @@
 	<title>HTML Wireframe</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+  	src="https://code.jquery.com/jquery-3.4.1.js"
+  	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  	crossorigin="anonymous"></script>
 </head>
 <body>
 	<nav role='navigation'>
-		<img src='RLS_initials.png' height='5%' width='5%' class='initials'>
+		<div id='cornermouseover'>
+			
+		</div>
 		Nav Bar
 		Projects
 		About Me
 	</nav>
 	<main>
 		<header role = 'banner'>
-			<h1>Hero</h1>
-			<img src='rlslogo.png' height='20%' width='20%'>
-			<h2>Hi New Friends! I'm Rachael, an aspiring fullstack developer.</h2>
-			
+			<h1>Hi New Friends! I'm Rachael, an aspiring fullstack developer.</h1>
+			<img src='RLS_initials.png' height='5%' width='5%' id='initials'>
 		</header>
 
 		<section class='project1'>
-			<h1>Projects</h1>
+			<h2>Projects</h2>
+			
 			<h3>Sky Candy Rigging Quiz</h3>
 			<img src='riggingquizphoto.png' height='70%' width='70%'>
 			<p>Project Description: Built using jQuery, this web app is designed to test the users knowledge of rigging aerial apparatus at Sky Candy, an aerial studio in Austin, TX. It will be taken by Sky Candy employees following their mandatory rigging training. I collaborated with the CEO and owner on the questions and I used Sky Candy's website to inform the design.</p>
 		</section>
-		<section class='project2'>
-			Project 2
-		</section>
+
 		<section class='aboutme'>
 			<h2>About Me</h2>
 			<img src='headshot.jpg' alt='Black and white headshot of a woman with short curly hair' width='25%' height='25%'>
 			<p>I'm a current student in the Thinkful Bootcamp for fullstack development. I really enjoy coding because it's like solving puzzles to create something totally new. <br>When I'm not coding, you'll find me hanging out (literally!) on a trapeze at my local aerial studio or on my couch reading with my cats. My life goal is to be a crazy cat lady and with three cats, I feel I'm well on my way!
 			</p>
 
+		</section>
+		<section class='project2'>
+			<img src='rlslogo.png' height='20%' width='20%'>
 		</section>
 	</main>
 	<footer role='content-info'>Contact Info
