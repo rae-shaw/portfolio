@@ -7,15 +7,22 @@ body {
 	flex-direction: column;
 	text-align: center;
 	font-family: 'Questrial', sans-serif;
-	background-color: #792782;
+	margin: 0px;
+	/*background-color: #792782;*/
 }
 
 nav {
 	top: 0;
   	left: 0;
   	right: 0;
-  	border: 2rem;
+  	border: 1em;
+  	position: fixed;
 
+
+}
+
+.laptopsize{
+	display:none;
 }
 
 .logo {
@@ -81,6 +88,7 @@ header {
 	color: black;
 	font-family: 'Old Standard TT', serif;
 	background-color: white;
+	padding-top: 15%;
 }
 
 .headshot {
@@ -91,7 +99,9 @@ header {
 h2 {
 	font-family: 'Old Standard TT', serif;
 	color: black;
-	background-color: #ddb545;
+	font-weight: bold;
+	font-size: 2em;
+	/*background-color: #792782;;*/
 }
 
 .initials {
@@ -104,20 +114,35 @@ nav, footer {
 	color: white;
 }
 
-/*.headingbar {
-	background-color: #ddb545;
-	margin:0;
-}*/
-
-.project1, .project2, .aboutme {
-	background-color: white;
-	padding: 3 rem;
+section {
+	padding: 1em;
 }
 
+.project1, .project2 {
+	background-color: #ffe775;
+	
+}
+
+.aboutme  {
+	background-color: #4a0055;
+	color: white;
+}
+
+.fs {
+	text-decoration: none;
+	color: black;
+}
+
+
+.links {
+	display: flex;
+	justify-content:space-evenly;
+}
 
 footer {
 	display: flex;
 	justify-content: space-around;
+	padding: 2em;
 }
 
 .fa {
@@ -128,4 +153,29 @@ footer {
 .email {
 	color: white;
 	text-decoration: none;
+}
+
+
+@media screen and (min-width: 1000px){
+	.container {
+		display: none;
+	}
+
+	.laptopsize {
+		display:flex;
+		justify-content: space-around;
+		padding: 2em;
+	}
+
+
+	a.item_menu{
+		color: white;
+ 	 	text-decoration: none;
+
+	}
+
+	header {
+		flex-direction: column;
+	}
+
 }
