@@ -11,12 +11,18 @@ body {
 }
 
 nav {
-	position: fixed;
 	top: 0;
   	left: 0;
   	right: 0;
   	border: 2rem;
 
+}
+
+.logo {
+	background-color: white;
+    float: left;
+    margin: .5rem;
+    padding: .5rem;
 }
 
 .container {
@@ -32,11 +38,54 @@ nav {
   transition: 0.4s;
 }
 
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+div.menu {
+	width: 200px;
+	/*min-height: calc(100vh - 121px);*/
+	background-color: #ffe775;
+	position: absolute;
+	top: -300px;
+	transition: .3s all;
+	float: right;
+}
+div.menu > a {
+    display: block;
+    padding: 5px;
+    margin: 15px 0 0px 20px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu_show {
+	top: 55px !important;
+
+}
+
 
 header {
+	display: flex;
 	color: black;
 	font-family: 'Old Standard TT', serif;
 	background-color: white;
+}
+
+.headshot {
+	align-self: center;
+	padding: 1rem;
 }
 
 h2 {
@@ -45,6 +94,9 @@ h2 {
 	background-color: #ddb545;
 }
 
+.initials {
+	border: .5px solid black;
+}
 
 nav, footer {
 	background-color: #4a0055;
@@ -59,9 +111,21 @@ nav, footer {
 
 .project1, .project2, .aboutme {
 	background-color: white;
-	padding: 0;
+	padding: 3 rem;
 }
-header, section {
-	min-height: 300px;
-	padding: 3rem;
+
+
+footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.fa {
+	color: white;
+	text-decoration: none;
+}
+
+.email {
+	color: white;
+	text-decoration: none;
 }
