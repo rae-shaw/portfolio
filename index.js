@@ -11,41 +11,35 @@ function expandMenu(){
 	$("div.menu").toggleClass("menu_show");
 	}
 
+//responsible for toggling the bars to an X
 function animateBars(){
   $('.container').toggleClass("change");
 }
 
-/*function collapseMenu(){
-		$('body').on('click', '.container', function(){
-			$("menu_show").toggleClass("div.menu");
-			console.log('click2 ran!')
-	});
-}*/
-
+//responsible for when a user clicks on the hamburger icon
 function hamburgerClick(){
 	$('.nav').on('click', '.container', function(event){
 		event.preventDefault();
 		console.log('hamburger clicked!');
 		expandMenu();
 		animateBars();
-		//collapseMenu();
 	});
 }
 
+//resonsble for what happens when the user clicks on a menu item
 function menuItemClick(){
 	$('.nav').on('click', '.menu', function(event){
-		//event.preventDefault();
+		event.preventDefault();
 		expandMenu();
 		animateBars();
 });
 }
 
-
+//responsible for rendering the landing page
 function loadPage () {
   hamburgerClick();
   menuItemClick();
   console.log('load page!');
-
 }
 
 $(loadPage);

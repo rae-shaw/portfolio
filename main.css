@@ -8,7 +8,6 @@ body {
 	text-align: center;
 	font-family: 'Questrial', sans-serif;
 	margin: 0px;
-	/*background-color: #792782;*/
 }
 
 nav {
@@ -17,8 +16,12 @@ nav {
   	right: 0;
   	border: 1em;
   	position: fixed;
+}
 
-
+nav, footer {
+	background-color: #4a0055;
+	min-height: 50px;
+	color: white;
 }
 
 .laptopsize{
@@ -61,13 +64,13 @@ nav {
 
 div.menu {
 	width: 200px;
-	/*min-height: calc(100vh - 121px);*/
 	background-color: #ffe775;
 	position: absolute;
 	top: -300px;
 	transition: .3s all;
-	float: right;
+	right: 0;
 }
+
 div.menu > a {
     display: block;
     padding: 5px;
@@ -75,13 +78,13 @@ div.menu > a {
     color: black;
     text-transform: uppercase;
     text-decoration: none;
+    right: 0;
 }
 
 .menu_show {
 	top: 55px !important;
 
 }
-
 
 header {
 	display: flex;
@@ -96,29 +99,18 @@ header {
 	padding: 1rem;
 }
 
+section {
+	padding: 1em;
+}
+
 h2 {
 	font-family: 'Old Standard TT', serif;
 	color: black;
 	font-weight: bold;
 	font-size: 2em;
-	/*background-color: #792782;;*/
 }
 
-.initials {
-	border: .5px solid black;
-}
-
-nav, footer {
-	background-color: #4a0055;
-	min-height: 50px;
-	color: white;
-}
-
-section {
-	padding: 1em;
-}
-
-.project1, .project2 {
+.project1, .worktogether {
 	background-color: #ffe775;
 	
 }
