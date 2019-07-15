@@ -1,9 +1,9 @@
 //responsible for changing the image icon on mouseover
-function imageMouseOver(){
+/*function imageMouseOver(){
 	$("#cornermouseover").mouseover(function(){
   console.log("mouseover");
 });
-}
+}*/
 
 
 //responsible for expanding the hamburger nav
@@ -20,7 +20,6 @@ function animateBars(){
 function hamburgerClick(){
 	$('.nav').on('click', '.container', function(event){
 		event.preventDefault();
-		console.log('hamburger clicked!');
 		expandMenu();
 		animateBars();
 	});
@@ -29,7 +28,6 @@ function hamburgerClick(){
 //resonsble for what happens when the user clicks on a menu item
 function menuItemClick(){
 	$('.nav').on('click', '.menu', function(event){
-		event.preventDefault();
 		expandMenu();
 		animateBars();
 });
