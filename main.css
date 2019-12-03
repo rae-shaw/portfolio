@@ -24,6 +24,23 @@ nav, footer {
 	color: white;
 }
 
+.projects-p{
+	text-align: left;
+	
+}
+
+.project1:nth-child(even) {
+    background-color: #EBEBE5;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme-p{
+	text-align: left;
+
+}
+
 .laptopsize{
 	display:none;
 }
@@ -110,7 +127,7 @@ h2 {
 	font-size: 2em;
 }
 
-.project1, .worktogether {
+.project1 {
 	background-color: #ffe775;
 	
 }
@@ -122,7 +139,7 @@ h2 {
 
 .fs {
 	text-decoration: none;
-	color: black;
+	color: #4a0055;
 }
 
 
