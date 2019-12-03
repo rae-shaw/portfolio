@@ -1,15 +1,7 @@
-//responsible for changing the image icon on mouseover
-/*function imageMouseOver(){
-	$("#cornermouseover").mouseover(function(){
-  console.log("mouseover");
-});
-}*/
-
-
 //responsible for expanding the hamburger nav
 function expandMenu(){
 	$("div.menu").toggleClass("menu_show");
-	}
+}
 
 //responsible for toggling the bars to an X
 function animateBars(){
@@ -30,7 +22,7 @@ function menuItemClick(){
 	$('.nav').on('click', '.menu', function(event){
 		expandMenu();
 		animateBars();
-});
+	});
 }
 
 //responsible for rendering the landing page
