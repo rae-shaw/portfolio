@@ -29,7 +29,7 @@ nav, footer {
 	
 }
 
-.project1:nth-child(even) {
+.project1:nth-child(even), .worktogether {
     background-color: #EBEBE5;
     
     display: flex;
@@ -50,11 +50,18 @@ nav, footer {
     float: left;
     margin: .5rem;
     padding: .5rem;
+    width: 20%;
+    height: 20%;
 }
 
 .container {
 	margin: .5rem;
 	float: right;
+}
+
+.screenshot {
+	height: 70%;
+	width: 70%;
 }
 
 .bar1, .bar2, .bar3 {
@@ -114,6 +121,8 @@ header {
 .headshot {
 	align-self: center;
 	padding: 1rem;
+	width: 25%; 
+	height: 25%;
 }
 
 section {
@@ -127,7 +136,7 @@ h2 {
 	font-size: 2em;
 }
 
-.project1 {
+.project1,  {
 	background-color: #ffe775;
 	
 }
