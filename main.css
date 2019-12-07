@@ -8,6 +8,7 @@ body {
 	text-align: center;
 	font-family: 'Questrial', sans-serif;
 	margin: 0px;
+
 }
 
 nav {
@@ -38,7 +39,7 @@ nav, footer {
 
 .aboutme-p{
 	text-align: left;
-
+	padding: .25em;
 }
 
 .laptopsize{
@@ -60,8 +61,9 @@ nav, footer {
 }
 
 .screenshot {
-	height: 70%;
-	width: 70%;
+	height: 100%;
+	width: 100%;
+	border: grey solid 1px;
 }
 
 .bar1, .bar2, .bar3 {
@@ -103,6 +105,7 @@ div.menu > a {
     text-transform: uppercase;
     text-decoration: none;
     right: 0;
+    size: 3em;
 }
 
 .menu_show {
@@ -116,6 +119,8 @@ header {
 	font-family: 'Old Standard TT', serif;
 	background-color: white;
 	padding-top: 15%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .headshot {
@@ -126,7 +131,7 @@ header {
 }
 
 section {
-	padding: 1em;
+	padding: 2em;
 }
 
 h2 {
@@ -143,18 +148,21 @@ h2 {
 
 .aboutme  {
 	background-color: #4a0055;
-	color: white;
+	color: #EBEBE5;
+	line-height: 1.5em
 }
 
 .fs {
 	text-decoration: none;
 	color: #4a0055;
+	padding: .25em;
 }
 
 
 .links {
 	display: flex;
-	justify-content:space-evenly;
+	flex-direction: column;
+	padding: 1em;
 }
 
 footer {
@@ -166,11 +174,13 @@ footer {
 .fa {
 	color: white;
 	text-decoration: none;
+	font-size: 2.5em !important;
 }
 
 .email {
 	color: white;
 	text-decoration: none;
+	font-size: 2.5em !important;
 }
 
 
@@ -189,11 +199,36 @@ footer {
 	a.item_menu{
 		color: white;
  	 	text-decoration: none;
+ 	 	size: 3em !important;
 
+	}
+
+	.links {
+		display: flex;
+		flex-direction: row;
+		justify-content:space-evenly;
 	}
 
 	header {
 		flex-direction: column;
 	}
+
+	.screenshot {
+	height: 70%;
+	width: 70%;
+	border: grey solid 1px;
+	}
+
+	.fa {
+	color: white;
+	text-decoration: none;
+	font-size: 3.75em !important;
+}
+
+.email {
+	color: white;
+	text-decoration: none;
+	font-size: 3.75em !important;
+}
 
 }
