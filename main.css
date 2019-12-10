@@ -27,7 +27,7 @@ nav, footer {
 
 .projects-p{
 	text-align: left;
-	
+	line-height: 1.5em;
 }
 
 .project1:nth-child(even), .worktogether {
